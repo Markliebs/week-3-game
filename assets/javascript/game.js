@@ -129,15 +129,15 @@ document.onkeyup = function (event) {
 
         // Taking the tallies and displaying them in HTML
         var html =
-            "<p>Wins: " +
+            "<h3>Wins: " +
             wins +
-            "</p>" +
-            "<p>Losses: " +
+            "</h3>" +
+            "<h3>Losses: " +
             losses +
-            "</p>"
-            "<p>Guesses: " +
-            guesses +
-            "</p>";
+            "</h3>";
+            // "<p>Guesses: " +
+            // guesses +
+            // "</p>";
 
         // Placing the html into the game ID
         document.querySelector('#game').innerHTML = html;
