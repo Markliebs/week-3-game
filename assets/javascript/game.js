@@ -12,10 +12,9 @@ document.onkeyup = function (event) {
     // This sets the computer guess equal to the random.
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-    // Making sure the user chooses a letter
-    if ((userGuess == 'a') || (userGuess == 'b') || (userGuess == 'c') || (userGuess == 'd') || (userGuess == 'e') || (userGuess == 'f') || (userGuess == 'g') || (userGuess == 'h') || (userGuess == 'i') || (userGuess == 'j') || (userGuess == 'k') || (userGuess == 'l') || (userGuess == 'm') || (userGuess == 'n') || (userGuess == 'o') || (userGuess == 'p') || (userGuess == 'q') || (userGuess == 'r') || (userGuess == 's') || (userGuess == 't') || (userGuess == 'u') || (userGuess == 'v') || (userGuess == 'w') || (userGuess == 'x') || (userGuess == 'y') || (userGuess == 'z')) {
+    {
 
-        // It tests to determine if the computer or the user won the round and then increments 
+        // It tests to determine if user won the round and then increments 
         if ((userGuess == 'a') && (computerGuess == 'a')) {
             wins++;
         } else if ((userGuess == 'a') && (computerGuess !== 'a')) {
