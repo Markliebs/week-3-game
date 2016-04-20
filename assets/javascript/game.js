@@ -5,17 +5,21 @@ var wins = 0;
 var losses = 0;
 var guesses = 10;
 
+
 // When the user presses the key it records the keypress and then sets it to userguess
 document.onkeyup = function (event) {
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
     // This sets the computer guess equal to the random.
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    console.log(computerGuess)
 
     {
 
-        // It tests to determine if user won the round and then increments 
-        if ((userGuess == 'a') && (computerGuess == 'a')) {
+        // checks to see if the right letter was picked and then increments 
+        if (guesses = 0) {
+            losses++;
+        } else if ((userGuess == 'a') && (computerGuess == 'a')) {
             wins++;
         } else if ((userGuess == 'a') && (computerGuess !== 'a')) {
             guesses--;
@@ -119,25 +123,27 @@ document.onkeyup = function (event) {
             wins++;
         } else if ((userGuess == 'z') && (computerGuess !== 'z')) {
             guesses--;
-        } else if (guesses = 0) {
-            losses++;
         }
+        // if (guesses = 0) {
+        //     losses++;
+        // }
+        console.log(guesses)
 
-            // Taking the tallies and displaying them in HTML
-            var html =
-                "<p>Wins: " +
-                wins +
-                "</p>" +
-                "<p>Losses: " +
-                losses +
-                "</p>"
-                "<p>Guesses Remaining: " +
-                guesses +
-                "</p>" ;
+        // Taking the tallies and displaying them in HTML
+        var html =
+            "<p>Wins: " +
+            wins +
+            "</p>" +
+            "<p>Losses: " +
+            losses +
+            "</p>"
+            "<p>Guesses: " +
+            guesses +
+            "</p>";
 
-            // Placing the html into the game ID
-            document.querySelector('#game').innerHTML = html;
+        // Placing the html into the game ID
+        document.querySelector('#game').innerHTML = html;
 
-        }
     }
+}
 
