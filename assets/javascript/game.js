@@ -33,7 +33,7 @@ document.onkeyup = function (event) {
         }
 
         // Taking the tallies and displaying them in HTML
-        var html = "<p>Press a letter to start playing</p>" +
+        var html = 
             "<p>wins: " +
             wins +
             "</p>" +
