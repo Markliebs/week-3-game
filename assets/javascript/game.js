@@ -135,10 +135,7 @@ document.onkeyup = function (event) {
             "<h3>Losses: " +
             losses +
             "</h3>";
-            // "<p>Guesses: " +
-            // guesses +
-            // "</p>";
-
+        
         // Placing the html into the game ID
         document.querySelector('#game').innerHTML = html;
 
