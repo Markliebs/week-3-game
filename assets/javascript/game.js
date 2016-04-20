@@ -17,117 +17,115 @@ document.onkeyup = function (event) {
     {
 
         // checks to see if the right letter was picked and then increments 
-        if (guesses = 0) {
-            losses++;
-        } else if ((userGuess == 'a') && (computerGuess == 'a')) {
+        if ((userGuess == 'a') && (computerGuess == 'a')) {
             wins++;
         } else if ((userGuess == 'a') && (computerGuess !== 'a')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'b') && (computerGuess == 'b')) {
             wins++;
         } else if ((userGuess == 'b') && (computerGuess !== 'b')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'c') && (computerGuess == 'c')) {
             wins++;
         } else if ((userGuess == 'c') && (computerGuess !== 'c')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'd') && (computerGuess == 'd')) {
             wins++;
         } else if ((userGuess == 'd') && (computerGuess !== 'd')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'e') && (computerGuess == 'e')) {
             wins++;
         } else if ((userGuess == 'e') && (computerGuess !== 'e')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'f') && (computerGuess == 'f')) {
             wins++;
         } else if ((userGuess == 'f') && (computerGuess !== 'f')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'g') && (computerGuess == 'g')) {
             wins++;
         } else if ((userGuess == 'g') && (computerGuess !== 'g')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'h') && (computerGuess == 'h')) {
             wins++;
         } else if ((userGuess == 'h') && (computerGuess !== 'h')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'i') && (computerGuess == 'i')) {
             wins++;
         } else if ((userGuess == 'i') && (computerGuess !== 'i')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'j') && (computerGuess == 'j')) {
             wins++;
         } else if ((userGuess == 'j') && (computerGuess !== 'j')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'k') && (computerGuess == 'k')) {
             wins++;
         } else if ((userGuess == 'k') && (computerGuess !== 'k')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'l') && (computerGuess == 'l')) {
             wins++;
         } else if ((userGuess == 'l') && (computerGuess !== 'l')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'm') && (computerGuess == 'm')) {
             wins++;
         } else if ((userGuess == 'm') && (computerGuess !== 'm')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'n') && (computerGuess == 'n')) {
             wins++;
         } else if ((userGuess == 'n') && (computerGuess !== 'n')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'o') && (computerGuess == 'o')) {
             wins++;
         } else if ((userGuess == 'o') && (computerGuess !== 'o')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'p') && (computerGuess == 'p')) {
             wins++;
         } else if ((userGuess == 'p') && (computerGuess !== 'p')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'q') && (computerGuess == 'q')) {
             wins++;
         } else if ((userGuess == 'q') && (computerGuess !== 'q')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'r') && (computerGuess == 'r')) {
             wins++;
         } else if ((userGuess == 'r') && (computerGuess !== 'r')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 's') && (computerGuess == 's')) {
             wins++;
         } else if ((userGuess == 's') && (computerGuess !== 's')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 't') && (computerGuess == 't')) {
             wins++;
         } else if ((userGuess == 't') && (computerGuess !== 't')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'u') && (computerGuess == 'u')) {
             wins++;
         } else if ((userGuess == 'u') && (computerGuess !== 'u')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'v') && (computerGuess == 'v')) {
             wins++;
         } else if ((userGuess == 'v') && (computerGuess !== 'v')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'w') && (computerGuess == 'w')) {
             wins++;
         } else if ((userGuess == 'w') && (computerGuess !== 'w')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'x') && (computerGuess == 'x')) {
             wins++;
         } else if ((userGuess == 'x') && (computerGuess !== 'x')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'y') && (computerGuess == 'y')) {
             wins++;
         } else if ((userGuess == 'y') && (computerGuess !== 'y')) {
-            guesses--;
+            losses++;
         } else if ((userGuess == 'z') && (computerGuess == 'z')) {
             wins++;
         } else if ((userGuess == 'z') && (computerGuess !== 'z')) {
-            guesses--;
+            losses++;
         }
         // if (guesses = 0) {
         //     losses++;
         // }
-        console.log(guesses)
+        // console.log(guesses)
 
         // Taking the tallies and displaying them in HTML
         var html =
