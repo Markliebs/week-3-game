@@ -3,7 +3,7 @@ var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l
 // Declares the tallies to 0 
 var wins = 0;
 var losses = 0;
-var ties = 0;
+var guesses = 10;
 
 // When the user presses the key it records the keypress and then sets it to userguess
 document.onkeyup = function (event) {
@@ -123,11 +123,14 @@ document.onkeyup = function (event) {
 
             // Taking the tallies and displaying them in HTML
             var html =
-                "<p>wins: " +
+                "<p>Wins: " +
                 wins +
                 "</p>" +
-                "<p>losses: " +
+                "<p>Losses: " +
                 losses +
+                "</p>"
+                "<p>Guesses Remaining: " +
+                guesses -
                 "</p>";
 
             // Placing the html into the game ID
